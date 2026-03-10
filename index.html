@@ -1,60 +1,137 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog do Roberto</title>
     <style>
+
         body {
+            font-family: Arial, Helvetica, sans-serif;
             max-width: 1000px;
             margin: auto;
+            background-color: rgb(255, 246, 235);
+            color: #333;
+            padding: 20px;
         }
+
+        header {
+            text-align: center;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .layout {
+            display: flex;
+            gap: 20px;
+        }
+
+        main {
+            flex: 2;
+            background-color: white;
+            padding: 25px;
+            border-radius: 15px;
+            min-width: 300px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        aside {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            border-left: 5px solid rgb(0, 0, 107);
+            border-bottom: 5px solid rgb(0, 0, 107);
+            min-width: 250px;
+        }
+
+        img {
+            border-radius: 10%;
+            width: 100%;
+            max-width: 280px;
+            height: auto;
+            display: block;
+            margin: 0 auto 15px;
+        }
+
+        h1, h2, h3 {
+            color: rgb(0, 0, 107);
+            margin-top: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
     </style>
 </head>
-
 <body>
 
-    <h1>Blog Do Roberto</h1>
-    <p><i>Roberto Brittes Gebauer - 3º Ano de Informática</i></p>
-    <img src="roberto.jpg" alt="Foto do Roberto Brittes Gebauer" width="280">
-    <hr>
-    <h2>Biografia</h2>
-    <p>
-        Olá! Meu nome é <strong>Roberto Brittes Gebauer</strong>. Nasci em Cascavel (PR) no dia 13 de julho de 2009.
-        Desde a infância, sou apaixonado pelo universo esportivo, o que hoje define grande parte da minha rotina e dos
-        meus planos futuros.
-    </p>
-    <p>
-        Atualmente, sou aluno do 3º ano do Ensino Médio Integrado ao Técnico em Informática no <strong>IFPR - Campus
-            Cascavel</strong>. Apesar da formação técnica, pretendo seguir carreira na área de <strong>Educação
-            Física</strong>, unindo minha experiência prática como atleta ao conhecimento acadêmico para atuar como
-        treinador.
-    </p>
-    <hr>
-    <h2>Minhas Preferências</h2>
-    <h3>Esportivas (Favoritos)</h3>
-    <ol>
-        <li>Atletismo (Corrida de Rua)</li>
-        <li>Voleibol</li>
-        <li>Ciclismo</li>
-        <li>Natação</li>
-    </ol>
+    <header>
+        <h1>Blog Do Roberto</h1>
+        <p><i>Roberto Brittes Gebauer - 3º Ano de Informática</i></p>
+    </header>
 
-    <h3>Musicais</h3>
-    <ul>
-        <li>Sertanejo</li>
-        <li>Funk</li>
-        <li>MPB</li>
-    </ul>
-    <h3>Gastronômicas</h3>
-    <ul>
-        <li><a href="churrasco.html">Churrasco</a></li>
-        <li><a href="pizza.html">Pizza</a></li>
-        <li><a href="lasanha.html">Lasanha</a></li>
-        <li><a href="https://pudim.com.br">Pudim</a></li>
-    </ul>
+    <div class="layout">
+        
+        <main>
+            <section>
+                <h2>Biografia</h2>
+                <p>
+                    Olá! Meu nome é <strong>Roberto Brittes Gebauer</strong>. Nasci em Cascavel (PR) no dia 13 de julho de 2009.
+                    Desde a infância, sou apaixonado pelo universo esportivo, o que hoje define grande parte da minha rotina e dos
+                    meus planos futuros.
+                </p>
+                <p>
+                    Atualmente, sou aluno do 3º ano do Ensino Médio Integrado ao Técnico em Informática no <strong>IFPR - Campus
+                    Cascavel</strong>. Apesar da formação técnica, pretendo seguir carreira na área de <strong>Educação
+                    Física</strong>, unindo minha experiência prática como atleta ao conhecimento acadêmico para atuar como
+                    treinador.
+                </p>
+            </section>
+        </main>
+
+        <aside>
+            <img src="roberto.jpg" alt="Foto do Roberto Brittes Gebauer">
+            
+            <h3>Minhas Preferências</h3>
+            
+            <h4>Esportivas</h4>
+            <ol>
+                <li>Atletismo</li>
+                <li>Voleibol</li>
+                <li>Ciclismo</li>
+                <li>Natação</li>
+            </ol>
+
+            <h4>Musicais</h4>
+            <ul>
+                <li>Sertanejo</li>
+                <li>Funk</li>
+                <li>MPB</li>
+            </ul>
+
+            <h4>Gastronômicas</h4>
+            <ul>
+                <li><a href="churrasco.html">Churrasco</a></li>
+                <li><a href="https://pudim.com.br">Pudim</a></li>
+                <li><a href="pizza.html">Pizza</a></li>
+                <li><a href="lasanha.html">Lasanha</a></li>
+                
+            </ul>
+        </aside>
+
     </div>
+
+    <footer>
+        <p>&copy; 2024 - Roberto Brittes Gebauer | Desenvolvido com HTML Semântico</p>
+    </footer>
 
 </body>
 </html>
