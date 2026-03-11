@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog do Roberto</title>
     <style>
-
         body {
             font-family: Arial, Helvetica, sans-serif;
             max-width: 1000px;
             margin: auto;
-            background-color: rgb(255, 246, 235);
-            color: #333;
+            background-color: rgb(189, 232, 245);
+            color: #000000;
             padding: 20px;
         }
 
         header {
             text-align: center;
-            background-color: white;
+            background-color: rgb(73, 136, 196);
             padding: 30px;
             border-radius: 15px;
             margin-bottom: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         .layout {
@@ -31,20 +31,20 @@
 
         main {
             flex: 2;
-            background-color: white;
+            background-color: rgb(73, 136, 196);
             padding: 25px;
             border-radius: 15px;
             min-width: 300px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         aside {
             flex: 1;
-            background-color: white;
+            background-color: rgb(73, 136, 196);
             padding: 20px;
-            border-radius: 15px;
-            border-left: 5px solid rgb(0, 0, 107);
-            border-bottom: 5px solid rgb(0, 0, 107);
+            border-radius: 35px;
+            border-left: 5px solid rgb(28, 77, 141);
+            border-bottom: 5px solid rgb(28, 77, 141);
             min-width: 250px;
         }
 
@@ -53,24 +53,28 @@
             width: 100%;
             max-width: 280px;
             height: auto;
-            display: block;
-            margin: 0 auto 15px;
+            margin: 5px auto 15px;
         }
 
         h1, h2, h3 {
-            color: rgb(0, 0, 107);
+            color: rgb(15, 40, 84);
             margin-top: 0;
+        }
+
+        hr {
+            height: 2px;
+            border: none;
+            background-color: rgb(0, 8, 114);
         }
 
         footer {
             text-align: center;
             padding: 20px;
-            font-size: 0.9em;
             color: #666;
         }
-
     </style>
 </head>
+
 <body>
 
     <header>
@@ -79,19 +83,24 @@
     </header>
 
     <div class="layout">
-        
+
         <main>
             <section>
                 <h2>Biografia</h2>
                 <p>
-                    Olá! Meu nome é <strong>Roberto Brittes Gebauer</strong>. Nasci em Cascavel (PR) no dia 13 de julho de 2009.
-                    Desde a infância, sou apaixonado pelo universo esportivo, o que hoje define grande parte da minha rotina e dos
+                    Olá! Meu nome é <strong>Roberto Brittes Gebauer</strong>. Nasci em Cascavel (PR) no dia 13 de julho
+                    de 2009.
+                    Desde a infância, sou apaixonado pelo universo esportivo, o que hoje define grande parte da minha
+                    rotina e dos
                     meus planos futuros.
                 </p>
                 <p>
-                    Atualmente, sou aluno do 3º ano do Ensino Médio Integrado ao Técnico em Informática no <strong>IFPR - Campus
-                    Cascavel</strong>. Apesar da formação técnica, pretendo seguir carreira na área de <strong>Educação
-                    Física</strong>, unindo minha experiência prática como atleta ao conhecimento acadêmico para atuar como
+                    Atualmente, sou aluno do 3º ano do Ensino Médio Integrado ao Técnico em Informática no <strong>IFPR
+                        - Campus
+                        Cascavel</strong>. Apesar da formação técnica, pretendo seguir carreira na área de
+                    <strong>Educação
+                        Física</strong>, unindo minha experiência prática como atleta ao conhecimento acadêmico para
+                    atuar como
                     treinador.
                 </p>
             </section>
@@ -99,9 +108,9 @@
 
         <aside>
             <img src="roberto.jpg" alt="Foto do Roberto Brittes Gebauer">
-            
+
             <h3>Minhas Preferências</h3>
-            
+
             <h4>Esportivas</h4>
             <ol>
                 <li>Atletismo</li>
@@ -110,6 +119,8 @@
                 <li>Natação</li>
             </ol>
 
+            <hr>
+
             <h4>Musicais</h4>
             <ul>
                 <li>Sertanejo</li>
@@ -117,13 +128,15 @@
                 <li>MPB</li>
             </ul>
 
+            <hr>
+
             <h4>Gastronômicas</h4>
             <ul>
                 <li><a href="churrasco.html">Churrasco</a></li>
                 <li><a href="https://pudim.com.br">Pudim</a></li>
                 <li><a href="pizza.html">Pizza</a></li>
                 <li><a href="lasanha.html">Lasanha</a></li>
-                
+
             </ul>
         </aside>
 
@@ -134,4 +147,5 @@
     </footer>
 
 </body>
+
 </html>
