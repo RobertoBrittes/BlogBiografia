@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog do Roberto</title>
     <style>
+        @media (max-width: 710px) {
+            .layout {
+                flex-direction: column;
+            }
+        }
+
         body {
             font-family: Arial, Helvetica, sans-serif;
             max-width: 1000px;
@@ -22,6 +28,8 @@
             border-radius: 15px;
             margin-bottom: 20px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid rgb(28, 77, 141);
+            border-bottom: 5px solid rgb(28, 77, 141);
         }
 
         .layout {
@@ -36,6 +44,8 @@
             border-radius: 15px;
             min-width: 300px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid rgb(28, 77, 141);
+            border-bottom: 5px solid rgb(28, 77, 141);
         }
 
         aside {
@@ -56,9 +66,10 @@
             margin: 5px auto 15px;
         }
 
-        h1, h2, h3 {
+        h1,
+        h2,
+        h3 {
             color: rgb(15, 40, 84);
-            margin-top: 0;
         }
 
         hr {
